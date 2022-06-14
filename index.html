@@ -4,8 +4,97 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>My CV</title>
+  <link rel="icon" href="/assets/ico.ico">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#About_me">About me</a></li>
+        <li><a href="#Education">Education & Courses</a></li>
+        <li><a href="#Projects">My projects</a></li>
+        <li><a href="#Code">Code example</a></li>
+        <li><a href="#Contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="basic">
+    <div class="person">
+        <img src="assets/me.jpg" class="my-photo" alt="photo">
+        <h1>Hello!</h1>
+        <h2>My name is Anastasiia Mikhaleva</h2>
+    </div>
+    <div class="story">
+      <h3 id="About_me">About me</h3>
+      <p>My name is Anastasiia, I’m 21.
+        I’m studying at Novosibirsk State Pedagogical University I could be a teacher of history, but a few years ago I became interested in EdTech, online education etc. One year ago I took part in School 21 – unfortunately I didn’t qualify but at that moment I firmly decided to learn programming. I’ve chosen Frontend because for me it’s a sphere knowledge from which you can use in different areas of IT and at different projects.
+      </p>
+      <p>In free time, I help dogs – I give them temporary home. Now in my house livesmmy third dog – Nora. Others already have   permanent families.
+        And of course my biggest hobby and passion – programming and learning something new about it. Although I’m a really beginner in this but I feel my growth.
+      </p>
+      <p>
+        It’s my second try to finish RS School, so I’m learning frontend almost 6 months. It’s a big contingency how I’ve found this school – thank you twitter and I’m really glad!
+      </p>
+      <h3 id="Education">Education & Courses</h3>
+      <ul class="edu-list">
+        <li>2018 - 2023 - Novosibirsk State Pedagogical University</li>
+        <li>RS Schools Course «JavaScript/Front-end. Stage 0» (<a href="certificate.pdf" target="blanck">done</a>)</li>
+        <li>RS Schools Course «JavaScript/Front-end. Stage 1» (done)</li>
+        <li>Free Code Camp (in progress)</li>
+        <li>JavaScript Manual on learnjavascript.ru (in progress)</li>
+        <li>Russian - Native</li>
+        <li>English - A2 (B1 in progress)</li>
+        <li>German - A1/A2</li>
+      </ul>
+    </div>
+    </section>
+    <section class="projects">
+      <h3 id="Projects">My projects</h3>
+      <div class="project-items">
+        <a href="https://rolling-scopes-school.github.io/serenddi-JSFE2022Q1/shelter/pages/main" target="_blank"><div class="item">Shelter</div></a>
+        <a href="https://rolling-scopes-school.github.io/serenddi-JSFEPRESCHOOL/portfolio/" target="_blank"><div class="item">Landing page</div></a>
+      </div>
+    </section>
+    <section class="code">
+      <h3 id="code">Code example</h3>
+      <pre><code>function reverse (n) {
+        if (n &gt; 0) {
+            let a = [n]
+            let b = a.toString().split('');
+            let c = b.reverse();
+            let d = c.join('');
+           return d;
+        }
+        else if (n &lt; 0) {
+           let a = [n * -1]
+           let b = a.toString().split('');
+           let c = b.reverse();
+           let d = c.join('');
+          return d;
+        }
+        }</code></pre>
+    </section>
+    <section class="contacts">
+      <h3 id="contacts">My contacts</h3>
+      <div class="numbers">
+          <ul class="data">
+              <li><b>Location:</b> Novosibirsk, Russia </li>
+              <li><b>E-mail:</b> dadanastya24342@gmail.com</li>
+              <li><b>Discord:</b> AnastasiiaMikhaleva (serenddi)#0882</li>
+              <li><b>GitHub:</b><a href="https://github.com/Serenddi" target="blanck"> Serenddi </a></li>
+          </ul>
+      </div>
+  </section>
+  </main>
+  <footer>
+    <div class="foot">
+      <a href="https://github.com/Serenddi" target="blanck"><img src="assets/git.png" height="40" width="90" class="invert" alt="github-logo"></a>
+      <p>2022</p>
+      <a href="https://rs.school/js/" target="blanck"><img src="assets/logo.svg" height="40" width="90" class="invert" alt="rs-school-logo"></a>
+  </div>
+  </footer>
 </body>
 </html>
